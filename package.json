@@ -1,0 +1,22 @@
+{
+  "name": "routes-and-http-nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "lint": "eslint src --ext .ts --fix"
+  },
+  "keywords": [],
+  "author": "larads",
+  "license": "ISC",
+  "devDependencies": {
+    "@rocketseat/eslint-config": "^2.2.2",
+    "@types/node": "^22.4.2",
+    "eslint": "^8.57.0",
+    "tsx": "^4.17.0"
+  },
+  "dependencies": {
+    "fastify": "^4.28.1"
+  }
+}
