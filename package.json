@@ -7,28 +7,30 @@
     "test": "vitest",
     "dev": "tsx watch src/server.ts",
     "lint": "eslint src --ext .ts --fix",
-    "knex": "node --no-warnings --loader tsx ./node_modules/.bin/knex"
+    "knex": "node --no-warnings --loader tsx ./node_modules/.bin/knex",
+    "build": "tsup src --out-dir build"
   },
   "keywords": [],
   "author": "larads",
   "license": "ISC",
-  "devDependencies": {
-    "@rocketseat/eslint-config": "^2.2.2",
-    "@types/node": "^22.4.2",
-    "@types/supertest": "^6.0.2",
-    "eslint": "^8.57.0",
-    "supertest": "^7.0.0",
-    "tsx": "^4.17.0",
-    "vitest": "^2.0.5"
-  },
   "dependencies": {
-    "@fastify/cookie": "^9.4.0",
-    "dotenv": "^16.4.5",
-    "fastify": "^4.28.1",
-    "knex": "^3.1.0",
-    "sqlite3": "^5.1.7",
-    "ts-node": "^10.9.2",
+    "@fastify/cookie": "^8.3.0",
+    "dotenv": "^16.0.3",
+    "fastify": "^4.12.0",
+    "knex": "^2.4.2",
+    "pg": "^8.9.0",
+    "zod": "^3.20.2"
+  },
+  "devDependencies": {
+    "@rocketseat/eslint-config": "^1.2.0",
+    "@types/node": "^18.11.18",
+    "@types/supertest": "^2.0.12",
+    "eslint": "^8.33.0",
+    "sqlite3": "^5.1.4",
+    "supertest": "^6.3.3",
+    "tsup": "^6.5.0",
+    "tsx": "^3.12.2",
     "typescript": "^4.9.5",
-    "zod": "^3.23.8"
+    "vitest": "^0.28.3"
   }
 }
